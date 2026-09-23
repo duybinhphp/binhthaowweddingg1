@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#f4efe6">
+<meta name="format-detection" content="telephone=no, date=no, email=no, address=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Duy Bình & Hồng Thảo - Thiệp Cưới Online</title>
+
+<!-- Hiển thị đẹp khi chia sẻ link qua Zalo / Messenger -->
+<meta property="og:title" content="Thiệp cưới Duy Bình & Hồng Thảo">
+<meta property="og:description" content="Trân trọng kính mời bạn đến chung vui trong ngày cưới của chúng mình - 25/10/2026">
+<meta property="og:image" content="https://duybinhphp.github.io/binhthaowedding/images/ab19.jpg">
+<meta property="og:image:secure_url" content="https://duybinhphp.github.io/binhthaowedding/images/ab19.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<!-- KHÔNG khai báo og:url ở đây: nếu khai, Facebook/Messenger sẽ coi đây là "địa chỉ
+     chính thức duy nhất" của trang và tự thay link cá nhân hoá (?g=..., #g=...) bằng
+     đúng link gốc này ngay khi bấm Gửi - đó là lý do tên khách luôn bị mất. Bỏ trống
+     để Messenger giữ nguyên URL thật đang được chia sẻ. -->
+<meta property="og:type" content="website">
+<meta property="fb:app_id" content="2177525933144656">
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+ 
+<div class="wrap">
+
+  <!-- COVER : thiệp mời sang trọng, ấn dấu sáp -->
+  <div id="cover">
+    <div class="lux-envelope" id="envelope">
+      <div class="lux-frame">
+        <span class="lux-corner tl"></span>
+        <span class="lux-corner tr"></span>
+        <span class="lux-corner bl"></span>
+        <span class="lux-corner br"></span>
+ 
+        <div class="lux-watermark">B&amp;T</div>
+ 
+        <div class="lux-content">
+          <div class="lux-eyebrow">Wedding Invitation</div>
+          <div class="lux-monogram">B<span>&amp;</span>T</div>
+          <div class="lux-names1">Duy Bình</div>
+		  <span class="lux-names2">&amp;</span>
+		  <div class="lux-names3">Hồng Thảo</div>
+          <div class="lux-divider"></div>
+          <div class="lux-date">25 . 10 . 2026</div>
+		  <div class="lux-guest-row" id="lux-guest-row" hidden>
+            <div class="lux-guest-label">Trân trọng kính mời</div>
+            <div class="lux-guest-name guest-name-short-fill">Bạn</div>
+		  </div>
+        </div>
+ 
+        <div class="lux-seal-band">
+          <div class="lux-ribbon"></div>
+          <div class="lux-bow"></div>
+          <button class="wax-seal" id="wax-seal" aria-label="Chạm để mở thiệp">
+            <span>B·T</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="tap-hint">Chạm vào con dấu để mở thiệp</div>
+   </div>
+ 
+  <button id="music-btn" aria-label="Bật/tắt nhạc">🎵</button>
+  <audio id="bg-audio" loop src="nhacnen.mp3"></audio>
+  
+ 
+  <!-- OPENING PHOTO : ảnh mở đầu thiệp -->
+  <section id="opening-photo">
+    <div class="opening-photo-frame">
+      <img src="images/ab19.jpg" alt="Duy Bình & Hồng Thảo" loading="eager">
+      <div class="opening-overlay"></div>
+      <div class="opening-caption" id="opening-caption">
+        <span class="opening-line"></span>
+        <span class="opening-caption-text">Preserve the moment</span>
+		<span class="opening-caption-text">25 . 10 . 2026	</span>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- HERO -->
+  <section id="hero">
+    <div class="save reveal">Save Our Date</div>
+    <div class="couple script reveal">Duy Bình &amp; Hồng Thảo</div>
+    <div class="divider reveal-scale"></div>
+    <div class="families">
+      <div class="fam reveal-left">
+        <h4>Nhà Trai</h4>
+        <p>Ông Nguyễn Duy Chung<br>Bà Nguyễn Thị Tuyết<br>Hưng Yên</p>
+      </div>
+      <div class="fam reveal-right" style="text-align:right;">
+        <h4>Nhà Gái</h4>
+        <p>Ông Dương Ngọc Hổ<br>Bà Đào Thị Phượng<br>TP. Hà Nội</p>
+      </div>
+    </div>
+  </section>
+
+
+	<!-- EVENT -->
+  <section id="event">
+    <div class="eyebrow reveal">Lễ Cưới</div>
+    <div class="title reveal" style="font-size:24px;margin:10px 0 22px;">Trân trọng kính mời</div>
+    <div class="event-guest-name reveal guest-invite-only" id="event-guest-name" hidden>
+      <span class="guest-name-fill">Bạn</span>
+    </div>
+
+    <div class="event-cards">
+      <div class="event-card reveal-left">
+        <div class="event-tag">Bữa Cơm Thân Mật</div>
+        <div class="event-place">Tổ chức tại tư gia nhà gái</div>
+        <div class="event-addr">SN 62, Thôn Đông Đoài<br>xã Đại Xuyên, thành phố Hà Nội</div>
+        <div class="event-time">17:00, Thứ Bảy — 24/10/2026</div>
+        <a class="btn" href="https://maps.app.goo.gl/s2HfSWiJQt2PQpRRA" target="_blank" rel="noopener">Chỉ đường</a>
+      </div>
+
+      <div class="event-card reveal-right">
+        <div class="event-tag">Lễ Vu Quy</div>
+        <div class="event-place">Tổ chức tại tư gia nhà gái</div>
+        <div class="event-addr">SN 62, Thôn Đông Đoài<br>xã Đại Xuyên, thành phố Hà Nội</div>
+        <div class="event-time">07:00, Chủ nhật — 25/10/2026</div>
+        <a class="btn" href="https://maps.app.goo.gl/s2HfSWiJQt2PQpRRA" target="_blank" rel="noopener">Chỉ đường</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story">
+    <div class="quote reveal">All of me loves all of you</div>
+    <p class="reveal">Mọi thứ bắt đầu từ một lời chào giản đơn, nhưng đã thay đổi cả cuộc đời chúng tôi.</p>
+    <p class="reveal">Qua những khoảnh khắc cười đùa, những buổi tối ấm áp bên nhau, chúng tôi đã cùng nhau lớn lên, học hỏi và yêu thương.</p>
+    <div class="persons">
+      <div class="p reveal-left"><div class="avatar"><img src="images/anh1.jpg" alt="Chú Rể Duy Bình" loading="lazy"></div></div>
+      <div class="p reveal-right"><div class="avatar"><img src="images/anh2.jpg" alt="Cô Dâu Hồng Thảo" loading="lazy"></div></div>
+    </div>
+    <div class="persons-names reveal">
+  <span class="pname">Duy Bình</span>
+  <img class="bouquet reveal-scale" src="images/hoa.png" alt="Bó hoa cưới" loading="lazy">
+  <span class="pname">Hồng Thảo</span>
+  </div>
+  </section>
+
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="eyebrow reveal">Album</div>
+    <div class="title reveal" style="font-size:26px;margin:10px 0;">Love of Album</div>
+    <p class="reveal" style="font-size:14px;color:#8a7c68;">Chạm vào ảnh để xem toàn màn hình</p>
+    <div class="g-grid">
+      <button class="g-item reveal-scale" data-full="images/ab1.jpg"><img src="images/ab1.jpg" alt="Ảnh cưới 1" loading="lazy" decoding="async"></button>
+      <button class="g-item reveal-scale" data-full="images/ab2.jpg"><img src="images/ab2.jpg" alt="Ảnh cưới 2" loading="lazy" decoding="async"></button>
+      <button class="g-item reveal-scale" data-full="images/ab3.jpg"><img src="images/ab3.jpg" alt="Ảnh cưới 3" loading="lazy" decoding="async"></button>
+      <button class="g-item reveal-scale" data-full="images/ab4.jpg"><img src="images/ab4.jpg" alt="Ảnh cưới 4" loading="lazy" decoding="async"></button>
+	  <button class="g-item reveal-scale" data-full="images/ab5.jpg"><img src="images/ab5.jpg" alt="Ảnh cưới 5" loading="lazy" decoding="async"></button>
+      <button class="g-item reveal-scale" data-full="images/ab6.jpg"><img src="images/ab6.jpg" alt="Ảnh cưới 6" loading="lazy" decoding="async"></button>
+      <button class="g-item reveal-scale" data-full="images/ab7.jpg"><img src="images/ab7.jpg" alt="Ảnh cưới 7" loading="lazy" decoding="async"></button>
+      <button class="g-item reveal-scale" data-full="images/ab8.jpg"><img src="images/ab8.jpg" alt="Ảnh cưới 8" loading="lazy" decoding="async"></button>
+	  <button class="g-item reveal-scale" data-full="images/ab9.jpg"><img src="images/ab9.jpg" alt="Ảnh cưới 9" loading="lazy" decoding="async"></button>
+      <button class="g-item reveal-scale" data-full="images/ab10.jpg"><img src="images/ab10.jpg" alt="Ảnh cưới 10" loading="lazy" decoding="async"></button>
+    </div>
+  </section>
+
+  <!-- Các modal toàn màn hình đặt NGOÀI .wrap (làm con trực tiếp của body) để
+     tránh lỗi position:fixed bị kẹt/lệch theo cuộn khi nằm trong khung có
+     overflow-x:hidden — lỗi hay gặp trên webview Zalo/Messenger. -->
+
+<!-- LIGHTBOX : xem ảnh toàn màn hình, vuốt ngang đổi ảnh (carousel trượt thật) -->
+<div id="lightbox" class="lightbox">
+  <button id="lightbox-close" class="lightbox-close" aria-label="Đóng">✕</button>
+  <button id="lightbox-prev" class="lightbox-nav prev" aria-label="Ảnh trước" hidden>‹</button>
+  <div class="lightbox-viewport" id="lightbox-viewport">
+    <div class="lightbox-track" id="lightbox-track"></div>
+  </div>
+  <button id="lightbox-next" class="lightbox-nav next" aria-label="Ảnh sau" hidden>›</button>
+  <div id="lightbox-counter" class="lightbox-counter"></div>
+</div>
+
+  <!-- COUNTDOWN -->
+  <section id="countdown">
+    <div class="eyebrow reveal">Countdown</div>
+    <div class="title reveal">Đếm ngược ngày trọng đại</div>
+    <div class="cd-grid">
+      <div class="cd-item reveal-scale"><div class="num" id="cd-days">00</div><div class="lbl">Ngày</div></div>
+      <div class="cd-item reveal-scale"><div class="num" id="cd-hours">00</div><div class="lbl">Giờ</div></div>
+      <div class="cd-item reveal-scale"><div class="num" id="cd-mins">00</div><div class="lbl">Phút</div></div>
+      <div class="cd-item reveal-scale"><div class="num" id="cd-secs">00</div><div class="lbl">Giây</div></div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section id="rsvp">
+    <div class="eyebrow reveal">Xác nhận tham dự</div>
+    <div class="title reveal" style="font-size:24px;margin:10px 0 4px;">Bạn sẽ tham dự chứ?</div>
+    <p class="reveal" style="font-size:15px;color:#8a7c68;margin-top:8px;">Hãy xác nhận để chúng mình chuẩn bị chu đáo nhất</p>
+    <form id="rsvp-form" class="reveal">
+      <div>
+        <label>Họ và tên</label>
+        <input type="text" id="rsvp-name" placeholder="Nhập họ tên của bạn" required>
+      </div>
+      <div>
+        <label>Bạn sẽ tham dự chứ?</label>
+        <div class="radio-row" id="rsvp-attend-row">
+          <label><input type="radio" name="attend" value="yes" checked><span>Có, tôi sẽ tham dự</span></label>
+          <label><input type="radio" name="attend" value="no"><span>Rất tiếc, không thể</span></label>
+        </div>
+      </div>
+      <div>
+        <label>Số lượng người tham dự</label>
+        <select id="rsvp-count">
+          <option value="1">1 người</option>
+          <option value="2">2 người</option>
+          <option value="3">3 người</option>
+          <option value="4">4 người</option>
+          <option value="5">5 người</option>
+        </select>
+      </div>
+      <button type="submit">Gửi xác nhận</button>
+      <div class="thanks" id="rsvp-thanks">Cảm ơn bạn! Chúng mình đã nhận được xác nhận của bạn 💛</div>
+    </form>
+  </section>
+
+  <!-- WISHES -->
+  <section id="wishes">
+    <div class="eyebrow reveal">Lời chúc</div>
+    <div class="title reveal" style="font-size:24px;margin:10px 0 4px;">Gửi lời chúc phúc</div>
+    <p class="reveal" style="font-size:15px;color:#8a7c68;">Hãy để lại vài dòng chúc phúc cho đôi uyên ương</p>
+    <div class="reveal">
+      <input type="text" id="wish-name" placeholder="Tên của bạn">
+      <textarea id="wish-text" placeholder="Gửi lời chúc..."></textarea>
+      <button id="wish-send">Gửi lời chúc</button>
+    </div>
+    <div id="wish-list"></div>
+  </section>
+
+  <!-- GIFT BOX : hộp mừng cưới dạng quà tặng động -->
+  <section id="giftbox">
+    <div class="eyebrow reveal">Hộp Mừng Cưới</div>
+    <div class="title reveal" style="font-size:24px;margin:10px 0 4px;">Gửi Mừng Cưới Online</div>
+    <p class="reveal" style="font-size:15px;color:#8a7c68;max-width:340px;margin:0 auto;">
+      Chạm vào hộp quà để mở và xem mã QR chuyển khoản mừng cưới.
+    </p>
+
+    <div class="gift-boxes">
+      <button class="gift-box reveal-scale" id="box-bride"
+        data-name="Cô Dâu - Hồng Thảo"
+        data-qr="images/qr2.jpg"
+        data-bank="MBbank"
+        data-stk="0966866604"
+        data-holder="DUONG THI HONG THAO">
+        <span class="box-lid pink"><span class="box-bow"></span></span>
+        <span class="box-body pink"><span class="box-ribbon"></span></span>
+        <span class="box-label">Cô Dâu</span>
+      </button>
+    </div>
+
+    <div class="copy-toast" id="copy-toast">Đã sao chép số tài khoản</div>
+  </section>
+
+  <!-- QR MODAL : hiện khi mở hộp quà -->
+  <div id="qr-modal" class="qr-modal">
+    <div class="qr-modal-inner">
+      <button class="qr-close" id="qr-close" aria-label="Đóng">✕</button>
+      <div class="qr-modal-name" id="qr-modal-name"></div>
+      <img class="qr-modal-img" id="qr-modal-img" src="" alt="Mã QR chuyển khoản mừng cưới">
+      <div class="qr-modal-bank" id="qr-modal-bank"></div>
+      <div class="qr-modal-account">
+        <span id="qr-modal-stk"></span>
+        <button class="copy-btn" id="qr-copy-btn">Sao chép</button>
+      </div>
+      <div class="qr-modal-holder" id="qr-modal-holder"></div>
+    </div>
+  </div>
+
+  <footer>
+    Made with 💛 for Duy Bình &amp; Hồng Thảo
+  </footer>
+
+  <button class="heart-fab" id="heart-fab">❤</button>
+</div>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+
+<!-- App logic -->
+<script src="script.js?v=6"></script>
+
+</body>
+</html>
